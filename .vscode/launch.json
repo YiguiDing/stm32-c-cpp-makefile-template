@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Cortex-Debug with OpenOCD",
+      "cwd": "${workspaceRoot}",
+      "executable": "./output/main.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "configFiles": ["interface/stlink.cfg", "target/stm32f1x.cfg"],
+      "searchDir": [],
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "raw"
+    }
+  ],
+  "version": "0.2.0"
+}

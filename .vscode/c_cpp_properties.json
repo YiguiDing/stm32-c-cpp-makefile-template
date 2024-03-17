@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "gcc-arm-none-eabi",
+      "compilerPath": "D:/app/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
+      "defines": [
+        "STM32F10X_MD",
+        "USE_STDPERIPH_DRIVER"
+      ],
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/Device/cortex-m3",
+        "${workspaceFolder}/Device/STM32F10x",
+        "${workspaceFolder}/Device/STM32F10x_StdPeriph_Driver",
+        "${workspaceFolder}/System",
+        "${workspaceFolder}/User"
+      ],
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "${default}"
+    }
+  ],
+  "version": 4
+}

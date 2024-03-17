@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "make all"
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "make clean"
+    },
+    {
+      "label": "Write",
+      "type": "shell",
+      "command": "make write"
+    },
+    {
+      "label": "Erase",
+      "type": "shell",
+      "command": "make erase"
+    },
+    {
+      "label": "Reset",
+      "type": "shell",
+      "command": "make reset"
+    },
+    {
+      "label": "Debag",
+      "dependsOrder": "sequence",
+      "dependsOn": ["Build", "Write", "dbg"]
+    },
+    {
+      "label": "_Debag_",
+      "type": "process",
+      "command": "${command:workbench.action.debug.start}"
+    }
+  ]
+}
